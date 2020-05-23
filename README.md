@@ -1,1 +1,70 @@
 # Opioid_Classification
+
+## Feature Definitions
+
+- ClaimID Unique: Identifier for a claim
+- Accident DateID*: Number of days since the accident occurred from an arbitrary date
+- Claim Setup DateID*: Number of days since the Resolution Manager sets up the claim from an arbitrary date
+- Report To DateID*: Number of days since the employer notifies insurance of a claim from an arbitrary date
+- Employer Notification DateID*: Number of days since the claimant notifies employer of an injury from an arbitrary date
+- Benefits State: The jurisdiction whose benefits are applied to a claim
+- Accident State: State in which the accident occurred
+- Industry ID: Broad industry classification categories
+- Claimant Age: Age of the injured worker 
+- Claimant Sex: Sex of the injured worker 
+- Claimant State: State in which the claimant resides
+- Claimant Marital Status: Marital status of the injured worker 
+- Number Dependents: Number of dependents the claimant has
+- Weekly Wage: An average of the claimant’s weekly wages as of the injury date.
+- Employment Status Flag:
+    - Valid employment status codes are:
+    - F – Regular full-time employee
+    - P – Part-time employee
+    - U – Unemployed
+    - S – On strike
+    - D – Disabled
+    - R – Retired
+    - O – Other
+    - L – Seasonal worker
+    - V – Volunteer worker
+    - A – Apprenticeship full-time
+    - B – Apprenticeship part-time
+    - C – Piece worker
+- RTW Restriction Flag: A Y/N flag, used to indicate whether the employees responsibilities upon returning to work were limited as a result of his/her illness or injury.
+- Max Medical Improvement DateID: DateID of Maximum Medical Improvement, after which further recovery from or lasting improvements to an injury or disease can no longer be anticipated based on reasonable medical probability.
+- Percent Impairment: Indicates the percentage of anatomic or functional abnormality or loss, for the body as a whole, which resulted from the injury and exists after the date of maximum medical improvement
+- Post Injury Weekly Wage: The weekly wage of the claimant after returning to work, post-injury, and/or the claim is closed.
+- NCCI Job Code: A code that is established to identify and categorize jobs for workers’ compensation.
+- Surgery Flag: Indicates if the claimant’s injury will require or did require surgery
+- Disability Status:
+    - Temporary Total Disability (TTD)
+    - Temporary Partial Disability (TPD)
+    - Permanent Partial Disability (PPD)
+    - Permanent Total Disability (PTD)
+- SIC Group: Standard Industry Classification group for the client
+- NCCI BINatureOfLossDescription: Description of the end result of the bodily injury (BI) loss occurrence
+- Accident Source Code: A code identifying the object or source which inflicted the injury or damage.
+- Accident Type Group: A code identifying the general action which occurred resulting in the loss
+- Neurology Payment Flag: Indicates if there were any payments made for diagnosis and treatment of disorders ofthe nervous system without surgical intervention
+- Neurosurgery Payment Flag: Indicates if there were any payments made for services by physicians specializing in the diagnosis and treatment of disorders of the nervous system, including surgical intervention if needed
+- Dentist Payment Flag: Indicates if there were any payments made for prevention, diagnosis, and treatment of diseases of the teeth and gums
+- Orthopedic Surgery Payment Flag: Indicates if there were any payments made for surgery dealing with the skeletal system and preservation and restoration of its articulations and structures.
+- Psychiatry Payment Flag: Indicates if there were any payments made for treatment of mental, emotional, or behavioral disorders.
+- Hand Surgery Payment Flag: Indicates if there were any payments made for surgery only addressing one or both hands.
+- Optometrist Payment Flag: Indicates if there were any payments made to specialists who examine the eye for defects and faults of refraction and prescribe correctional lenses or exercises but not drugs or surgery
+- Podiatry Payment Flag: Indicates if there were any payments made for services from a specialist concerned with the care of the foot, including its anatomy, medical and surgical treatment, and its diseases.
+- HCPCS A Codes - HCPCS Z Codes: Count of the number of HCPCS codes that appear on the claim within each respective code group
+- ICD Group 1 - ICD Group 21: Count of the number of ICD codes that appear on the claim w/in each respective code group
+- Count of the number of codes on the claim
+    - CPT Category - Anesthesia
+    - CPT Category - Eval_Mgmt
+    - CPT Category - Medicine
+    - CPT Category - Path_Lab
+    - CPT Category - Radiology
+    - CPT Category - Surgery
+- Count of the number of NDC codes on the claim within eachrespective code class
+    - NDC Class - Benzo
+    - NDC Class - Misc (Zolpidem)
+    - NDC Class - Muscle Relaxants
+    - NDC Class - Stimulants
+- Opioids Used A True (1) or False (0) indicator for whether or not the claimant
